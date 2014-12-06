@@ -49,11 +49,18 @@ namespace ClassLibraryVoitureOnLine
         /// <returns>Le prix</returns>
         public virtual double Prix()
         {
+            double prix = 10000;
             switch (motorisation)
             {
-                case 
+                case "Hybride" :
+                    prix += 5000;
+                    break;
+
+                case "Gasoil":
+                    prix += 2000;
+                    break;
             }
-            return 10000;
+            return prix;
         }
 
         /// <summary>
@@ -62,7 +69,8 @@ namespace ClassLibraryVoitureOnLine
         /// <returns>Une chaine représentant la classe</returns>
         public virtual String Chaine()
         {
-            return "";
+            return String.Format("finition intérieur : {0}, finition extérieur : {1}, couleur : {2}, motorisation : {3}, Prix : {4}", 
+                this.finitionInt, this.finitionExt, this.couleur, this.motorisation, this.Prix());
         }
     }
 }
