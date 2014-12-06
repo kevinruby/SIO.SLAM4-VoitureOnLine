@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-// using classLibraryVoitureOnLine;
+using ClassLibraryVoitureOnLine;
 
 namespace UnitTestProjectVoitureOnLine
 {
@@ -10,7 +10,6 @@ namespace UnitTestProjectVoitureOnLine
         [TestMethod]
         public void TestPrixVoiture()
         {
-            /*
             Citadine uneC = new Citadine("Young", "Urban", "Métallisée", "Hybride", false);
             Citadine uneC2 = new Citadine("Young", "Urban", "Métallisée", "Essence", true);
             Citadine uneC3 = new Citadine("Young", "Urban", "Métallisée", "Gasoil", false);
@@ -25,7 +24,6 @@ namespace UnitTestProjectVoitureOnLine
             Assert.AreEqual(17000, uneCo2.Prix());
             Assert.AreEqual(25000, uneF.Prix());
             Assert.AreEqual(35000, uneL.Prix());
-            */
         }
     }
 }

@@ -34,7 +34,7 @@ namespace ClassLibraryVoitureOnLine
         public override double Prix()
         {
             double prix = base.Prix();
-            if (!quatrePortes)
+            if (!this.quatrePortes)
             {
                 prix -= 2000;
             }
@@ -48,7 +48,7 @@ namespace ClassLibraryVoitureOnLine
         public override String Chaine()
         {
             String nbPortes = "deux";
-            if (quatrePortes)
+            if (this.quatrePortes)
             {
                 nbPortes = "quatre";
             }

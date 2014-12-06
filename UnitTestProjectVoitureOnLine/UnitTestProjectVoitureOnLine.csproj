@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClassLibraryVoitureOnLine">
+      <HintPath>..\ClassLibraryVoitureOnLine\bin\Debug\ClassLibraryVoitureOnLine.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
