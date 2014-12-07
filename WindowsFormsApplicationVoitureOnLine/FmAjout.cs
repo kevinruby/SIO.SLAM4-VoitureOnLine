@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplicationVoitureOnLine
 {
-    public partial class Form1 : Form
+    public partial class FmAjout : Form
     {
-        public Form1()
+        public FmAjout()
         {
             InitializeComponent();
         }
