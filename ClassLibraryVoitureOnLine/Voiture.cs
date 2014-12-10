@@ -69,8 +69,8 @@ namespace ClassLibraryVoitureOnLine
         /// <returns>Une chaine représentant la classe</returns>
         public virtual String Chaine()
         {
-            return String.Format("finition intérieur : {0}, finition extérieur : {1}, couleur : {2}, motorisation : {3}, Prix : {4}", 
-                this.finitionInt, this.finitionExt, this.couleur, this.motorisation, this.Prix());
+            return String.Format("finition intérieur : {0}, finition extérieur : {1}, couleur : {2}, motorisation : {3}, Prix : {4}",
+                this.finitionInt, this.finitionExt, this.couleur, this.motorisation, this.Prix().ToString("C"));
         }
     }
 }

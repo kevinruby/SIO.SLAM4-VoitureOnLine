@@ -89,6 +89,7 @@
             this.afficherLesSimulationsToolStripMenuItem.Name = "afficherLesSimulationsToolStripMenuItem";
             this.afficherLesSimulationsToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.afficherLesSimulationsToolStripMenuItem.Text = "Afficher les simulations";
+            this.afficherLesSimulationsToolStripMenuItem.Click += new System.EventHandler(this.afficherLesSimulationsToolStripMenuItem_Click);
             // 
             // gpBoxType
             // 
@@ -116,6 +117,7 @@
             this.rdBtnLimousine.TabStop = true;
             this.rdBtnLimousine.Text = "Limousine";
             this.rdBtnLimousine.UseVisualStyleBackColor = true;
+            this.rdBtnLimousine.CheckedChanged += new System.EventHandler(this.rdBtnLimousine_CheckedChanged);
             // 
             // rdBtnFamiale
             // 
@@ -129,6 +131,7 @@
             this.rdBtnFamiale.TabStop = true;
             this.rdBtnFamiale.Text = "Familiale";
             this.rdBtnFamiale.UseVisualStyleBackColor = true;
+            this.rdBtnFamiale.CheckedChanged += new System.EventHandler(this.rdBtnFamiale_CheckedChanged);
             // 
             // rdBtnCompacte
             // 
@@ -142,6 +145,7 @@
             this.rdBtnCompacte.TabStop = true;
             this.rdBtnCompacte.Text = "Compacte";
             this.rdBtnCompacte.UseVisualStyleBackColor = true;
+            this.rdBtnCompacte.CheckedChanged += new System.EventHandler(this.rdBtnCompacte_CheckedChanged);
             // 
             // rdBtnCitadine
             // 
@@ -156,6 +160,7 @@
             this.rdBtnCitadine.TabStop = true;
             this.rdBtnCitadine.Text = "Citadine";
             this.rdBtnCitadine.UseVisualStyleBackColor = true;
+            this.rdBtnCitadine.CheckedChanged += new System.EventHandler(this.rdBtnCitadine_CheckedChanged);
             // 
             // ckBox4portes
             // 
@@ -173,6 +178,7 @@
             // 
             this.ckBoxCabriolet.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.ckBoxCabriolet.AutoSize = true;
+            this.ckBoxCabriolet.Enabled = false;
             this.ckBoxCabriolet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckBoxCabriolet.Location = new System.Drawing.Point(18, 329);
             this.ckBoxCabriolet.Name = "ckBoxCabriolet";
@@ -197,6 +203,11 @@
             // 
             this.cboxFinInt.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.cboxFinInt.FormattingEnabled = true;
+            this.cboxFinInt.Items.AddRange(new object[] {
+            "Young",
+            "Sport",
+            "Green",
+            "Carbon"});
             this.cboxFinInt.Location = new System.Drawing.Point(592, 185);
             this.cboxFinInt.Name = "cboxFinInt";
             this.cboxFinInt.Size = new System.Drawing.Size(180, 21);
@@ -228,6 +239,11 @@
             // 
             this.cBoxFinExt.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.cBoxFinExt.FormattingEnabled = true;
+            this.cBoxFinExt.Items.AddRange(new object[] {
+            "Urban",
+            "Metro",
+            "New",
+            "Express"});
             this.cBoxFinExt.Location = new System.Drawing.Point(592, 232);
             this.cBoxFinExt.Name = "cBoxFinExt";
             this.cBoxFinExt.Size = new System.Drawing.Size(180, 21);
@@ -248,6 +264,12 @@
             // 
             this.cBoxCouleur.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.cBoxCouleur.FormattingEnabled = true;
+            this.cBoxCouleur.Items.AddRange(new object[] {
+            "Métalisée",
+            "Bleu",
+            "Rouge",
+            "Noir",
+            "Blanc"});
             this.cBoxCouleur.Location = new System.Drawing.Point(592, 282);
             this.cBoxCouleur.Name = "cBoxCouleur";
             this.cBoxCouleur.Size = new System.Drawing.Size(180, 21);
@@ -268,6 +290,10 @@
             // 
             this.cBoxMotorisation.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.cBoxMotorisation.FormattingEnabled = true;
+            this.cBoxMotorisation.Items.AddRange(new object[] {
+            "Essence",
+            "Gasoil",
+            "Hybride"});
             this.cBoxMotorisation.Location = new System.Drawing.Point(592, 328);
             this.cBoxMotorisation.Name = "cBoxMotorisation";
             this.cBoxMotorisation.Size = new System.Drawing.Size(180, 21);
@@ -283,6 +309,7 @@
             this.btnQuitter.TabIndex = 15;
             this.btnQuitter.Text = "&Quitter";
             this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
             // btnValider
             // 
@@ -294,6 +321,7 @@
             this.btnValider.TabIndex = 16;
             this.btnValider.Text = "&Valider";
             this.btnValider.UseVisualStyleBackColor = true;
+            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
             // 
             // btnAnnuler
             // 
@@ -305,6 +333,7 @@
             this.btnAnnuler.TabIndex = 17;
             this.btnAnnuler.Text = "&Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // pictureBoxVoiture
             // 
@@ -344,9 +373,8 @@
             this.lbSelection.ForeColor = System.Drawing.Color.Green;
             this.lbSelection.Location = new System.Drawing.Point(125, 476);
             this.lbSelection.Name = "lbSelection";
-            this.lbSelection.Size = new System.Drawing.Size(78, 18);
+            this.lbSelection.Size = new System.Drawing.Size(0, 18);
             this.lbSelection.TabIndex = 21;
-            this.lbSelection.Text = "Sélection";
             // 
             // FmAjout
             // 
