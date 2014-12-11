@@ -63,9 +63,59 @@ namespace WindowsFormsApplicationVoitureOnLine.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap preview_location__vehicule_voiture_citadine_peugeot_107 {
+        internal static System.Drawing.Bitmap citadine2portes {
             get {
-                object obj = ResourceManager.GetObject("preview_location--vehicule-voiture-citadine-peugeot-107", resourceCulture);
+                object obj = ResourceManager.GetObject("citadine2portes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap citadine4portes {
+            get {
+                object obj = ResourceManager.GetObject("citadine4portes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap compacte {
+            get {
+                object obj = ResourceManager.GetObject("compacte", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CompacteCab {
+            get {
+                object obj = ResourceManager.GetObject("CompacteCab", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap familiale {
+            get {
+                object obj = ResourceManager.GetObject("familiale", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap limousine {
+            get {
+                object obj = ResourceManager.GetObject("limousine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

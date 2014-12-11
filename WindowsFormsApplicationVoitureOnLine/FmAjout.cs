@@ -126,6 +126,7 @@ namespace WindowsFormsApplicationVoitureOnLine
         {
             ckBox4portes.Enabled = true;
             ckBoxCabriolet.Enabled = false;
+            pictureBoxVoiture.Image = Properties.Resources.citadine2portes;
         }
 
         /// <summary>
@@ -137,6 +138,7 @@ namespace WindowsFormsApplicationVoitureOnLine
         {
             ckBox4portes.Enabled = false;
             ckBoxCabriolet.Enabled = true;
+            pictureBoxVoiture.Image = Properties.Resources.compacte;
         }
 
         /// <summary>
@@ -148,6 +150,7 @@ namespace WindowsFormsApplicationVoitureOnLine
         {
             ckBox4portes.Enabled = false;
             ckBoxCabriolet.Enabled = false;
+            pictureBoxVoiture.Image = Properties.Resources.familiale;
         }
 
         /// <summary>
@@ -159,6 +162,31 @@ namespace WindowsFormsApplicationVoitureOnLine
         {
             ckBox4portes.Enabled = false;
             ckBoxCabriolet.Enabled = false;
+            pictureBoxVoiture.Image = Properties.Resources.limousine;
+        }
+
+        private void ckBox4portes_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckBox4portes.Checked == true)
+            {
+                pictureBoxVoiture.Image = Properties.Resources.citadine4portes;
+            }
+            else
+            {
+                pictureBoxVoiture.Image = Properties.Resources.citadine2portes;
+            }
+        }
+
+        private void ckBoxCabriolet_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckBoxCabriolet.Checked == true)
+            {
+                pictureBoxVoiture.Image = Properties.Resources.CompacteCab;
+            }
+            else
+            {
+                pictureBoxVoiture.Image = Properties.Resources.compacte;
+            }
         }
     }
 }

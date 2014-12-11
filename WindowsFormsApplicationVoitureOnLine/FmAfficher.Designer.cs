@@ -36,6 +36,7 @@
             // 
             // lbCommandes
             // 
+            this.lbCommandes.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbCommandes.FormattingEnabled = true;
             this.lbCommandes.Location = new System.Drawing.Point(13, 13);
             this.lbCommandes.Name = "lbCommandes";
@@ -44,6 +45,7 @@
             // 
             // btnFermer
             // 
+            this.btnFermer.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnFermer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFermer.Location = new System.Drawing.Point(358, 272);
             this.btnFermer.Name = "btnFermer";
@@ -55,6 +57,7 @@
             // 
             // lbNbCommandes
             // 
+            this.lbNbCommandes.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lbNbCommandes.AutoSize = true;
             this.lbNbCommandes.Location = new System.Drawing.Point(12, 242);
             this.lbNbCommandes.Name = "lbNbCommandes";
@@ -64,6 +67,7 @@
             // 
             // lbTotalCommandes
             // 
+            this.lbTotalCommandes.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lbTotalCommandes.AutoSize = true;
             this.lbTotalCommandes.Location = new System.Drawing.Point(524, 242);
             this.lbTotalCommandes.Name = "lbTotalCommandes";
@@ -75,11 +79,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 307);
+            this.ClientSize = new System.Drawing.Size(784, 311);
             this.Controls.Add(this.lbTotalCommandes);
             this.Controls.Add(this.lbNbCommandes);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.lbCommandes);
+            this.MinimumSize = new System.Drawing.Size(800, 350);
             this.Name = "FmAfficher";
             this.Text = "Liste des commandes";
             this.ResumeLayout(false);
